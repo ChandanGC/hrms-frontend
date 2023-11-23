@@ -1,6 +1,6 @@
 node {
     stage('Checkout SCM') {
-        git branch: 'jenkins_test', url: 'git@github.com:raju1979/jenkins-test.git'
+        git branch: 'hrms-frontend', url: 'https://github.com/ChandanGC/hrms-frontend.git'
     }
 
     stage('Install node modules') {
@@ -16,6 +16,6 @@ node {
     }
     
     stage("Copy") {
-        sh "cp -a /var/lib/jenkins/workspace/angular-pipeline/dist/jenkins-test/. /var/www/jenkins_test/html/"
+        sh "cp -a /var/lib/jenkins/workspace/hrms/dist/hrms-frontend/. /var/www/hrms-frontend/html/"
     }
 }
