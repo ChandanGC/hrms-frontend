@@ -16,6 +16,6 @@ node {
     }
     
     stage("Copy") {
-        sh "cp -a /var/lib/jenkins/workspace/hrms/dist/hrms-frontend/. /var/www/hrms-frontend/html/"
+        sh "cp -a /var/lib/jenkins/workspace/hrms/dist/template/. /var/www/template/html/"
     }
 }
