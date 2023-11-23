@@ -39,20 +39,6 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true,
-
-    browsers: ['ChromeHeadlessCustom'],
-    customLaunchers: {
-      ChromeHeadlessCustom: {
-        base: 'ChromiumHeadless',
-        flags: [
-          '--no-sandbox',
-          '--headless',
-          '--disable-gpu',
-          '--disable-translate',
-          '--disable-extensions'
-        ]
-      }
-    }
+    restartOnFileChange: true
   });
 };
