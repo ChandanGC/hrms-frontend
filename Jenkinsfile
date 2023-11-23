@@ -1,6 +1,6 @@
 node {
     stage('Checkout SCM') {
-        git branch: 'hrms-frontend', url: 'https://github.com/ChandanGC/hrms-frontend.git'
+        git branch: 'master', url: 'https://github.com/ChandanGC/hrms-frontend.git'
     }
 
     stage('Install node modules') {
