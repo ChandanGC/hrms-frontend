@@ -8,7 +8,7 @@ node {
     }
 
     stage("Test") {
-        sh "npm run test --browsers=ChromeHeadlessNoSandbox"
+        sh "npm run test"
     }
 
     stage("Build") {
