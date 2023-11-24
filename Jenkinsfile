@@ -10,11 +10,6 @@ node {
     stage("Test") {
         sh "npm run test"
     }
-  
-    stage('Run Chrome Headless') {
-        sh "xvfb-run google-chrome --headless --disable-gpu --no-sandbox"
-    }
-    
 
     stage("Build") {
         sh "npm run build --prod"
