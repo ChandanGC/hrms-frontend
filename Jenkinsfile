@@ -10,7 +10,7 @@ node {
    
 
     stage("Build") {
-        sh "npm run build --prod"
+        sh "npm run build"
     }
     
     stage("Copy") {
