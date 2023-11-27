@@ -94,7 +94,7 @@
             "browserTarget": "template:build"
           }
         },
-        "test-headless": {
+        "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
