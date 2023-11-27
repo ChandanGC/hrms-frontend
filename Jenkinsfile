@@ -8,7 +8,7 @@ node {
     }
 
     stage("Test") {
-        sh "npm run test-headless --browsers=ChromeHeadless"
+        sh "npm run test-headless"
     }
 
     stage("Build") {
